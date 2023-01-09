@@ -1,0 +1,250 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+header, section, aside, footer, nav, address, article {
+    display: block;
+}
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+address {
+    font-style: normal;
+}
+a {color: inherit;text-decoration: none;}
+ul, ol {
+    list-style: none;
+}
+img {
+    max-width: 100%;
+    vertical-align: middle;
+    border: none;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+}
+.cf::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+.row {
+    max-width: 960px;
+    margin: 0 auto;
+}
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 13px;
+    line-height: 1.5em;
+    font-size: 16px;
+    color: #000;   
+}
+body:hover {
+    cursor: url(../img/note.png),auto;
+}
+#header {
+    box-shadow: 0 1px 2px #ddd;
+}
+#logo {
+    float: left;
+    margin: 50px 0;
+}
+#nav {float: right;
+    margin-top: 70px;
+}
+#nav .depth1 > li {
+    float: left;
+    width: 33.33333%;
+    position: relative;
+}
+#nav .depth1 > li:hover {
+    background-color: #4298cc;
+    color: #fff;
+}
+#nav .depth1 {
+    width: 600px;
+}
+#nav .depth1 > li > a {
+    display: block;
+    text-align: center;
+    padding: 6px 0;
+}
+#logo img {
+    width: 200px;
+}
+#nav .depth2 {
+    position: absolute;
+    top:100%;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    display: none;
+    color: #000;
+    z-index: 5;
+}
+#nav .depth2 a {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+}
+#nav .depth2 a:hover {
+    background-color: #00ccff;
+    color: #fff;
+}
+#nav .depth1 > li:hover .depth2 {
+    display: block;
+}
+#content {
+    margin-top: 10px;
+}
+#content .content_1 .slide {
+    display: none;
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+#content .content_1 .slide:first-child {
+    display: block;
+    background-image: url(../img/images\(1\).jpg);
+}
+#content .content_1 .slide:nth-child(2) {
+    background-image: url(../img/images\(2\).jpg);
+}
+#content .content_1 .slide:nth-child(3) {
+    background-image: url(../img/images\(3\).jpg);
+}
+#content .content_1 .slide p {
+    text-align: center;
+    color: #893700;
+    font-size: 24px;
+    width: 600px;
+    padding: 13px 0;
+    background: rgba(904, 904, 904, 0.4);
+    border-radius: 50px;
+    font-weight: 900;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -27px;
+    margin-left: -300px;
+}
+
+
+
+
+
+
+#content .content_2 {
+    overflow: hidden;
+    margin: 20px 0;
+}
+#content .content_2 h2 {
+    font-size: 24px;
+    text-align: center;
+    color: #999;
+    margin-bottom: 20px;
+}
+#content .content_2 .cont2_left {
+    float: left;
+    width: 49%;
+}
+
+#content .content_2 .cont2_left table {
+    font-size: 14.4px;
+}
+#content .content_2 .cont2_left table th,
+#content .content_2 .cont2_left table td {
+    padding: 5px 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#content .content_2 .cont2_left table tr:nth-child(even) {
+    background-color: darkgrey;
+}
+#content .content_2 .cont2_left col:nth-child(1) {
+    width:80%
+}
+#content .content_2 .cont2_left col:nth-child(2) {
+    width:20%;   
+}
+#content .content_2 .cont2_left table td:nth-child(2) {
+    text-align: center;
+}
+#content .content_2 .cont2_right {
+    float: right;
+    width: 49%;
+    text-align: center;
+}
+.cont2_right > div {
+    padding-top: 53px;
+}
+.content_3 {
+    text-align: center;
+    padding: 50px 0;
+}
+.content_3 > div {
+    display: inline-block;
+    padding: 0 45px;
+}
+.content_3 button {
+    display: block;
+    margin: 10px auto;
+    padding: 12px 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: 15px;
+    background-color: #999;
+    color: #fff;
+    cursor: pointer;
+}
+.content_3 button:hover {
+    background-color: #900;
+    transform: scale(1.3);
+    transition: 0.3s;
+}
+
+
+
+
+
+
+#footer {
+    background-color: #4298cc;
+    color: #fff;
+}
+#footer .row {
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+
+#footer a {
+    padding: 0 20px;
+}
+#footer a:hover {
+    text-decoration: underline;
+}
+#footer .footer_1 {
+    float: left;
+    width: 50%;
+    margin-top: 60px;
+}
+#footer .footer_2 address {
+    float: right;
+    width: 50%;
+    font-size: 12px;
+}
+#footer address pre {
+    font-family: 'Nanum Gothic', sans-serif;
+    line-height: 2.0em;
+}
+
+
